@@ -1281,7 +1281,7 @@ body.v-light:not(.no-light) {
   width: 100%;
   height: 5px;
   top: 0;
-  background: #ffffff;
+  background: #1d1d1d;
 }
 
 .preloader .preloader-bar .preloader-progress {
@@ -5279,9 +5279,6 @@ a:hover, a:active {
   margin: auto;
 }
 
-.work-masonry .projects-list {
-  margin-left: -15px;
-}
 
 .work-masonry .projects-list .work-item-box {
   width: auto;
