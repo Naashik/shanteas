@@ -937,7 +937,7 @@
         let headerSmall = $(".site-header");
         headerSmall.removeClass("header-stickytop");
         let bodyScroll = 0;
-        var $ofContent = $(".wrapper").offset();
+        var $ofContent = $(navfixed).offset();
         var header = $(".header-single-post .containers").offset();
 
         var post_full_content = $(".post-full-content").offset();
@@ -1010,7 +1010,7 @@
 
             $this.justifiedGallery({
                 rowHeight: 300,
-                margins: 15,
+            
 
             });
 
@@ -1375,6 +1375,7 @@
                     scroll = null;
                 }
             },
+            
             getScrollbar: function ($id) {
                 if ($id === undefined) {
                     return Scrollbar.get(myScrollbar);
@@ -2512,6 +2513,7 @@ function initMap() {
                             },
                         ],
                     },
+                    
                     {
                         "elementType": "labels.icon",
                         "stylers": [
@@ -2675,3 +2677,7 @@ function contactValidator() {
         }
     });
 }
+
+
+
+
