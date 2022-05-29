@@ -11328,7 +11328,13 @@ flex:20%;
     background-image: url('../fbg-011111-png.png');
     background-repeat: none;
 }
-.mySlides {display:none;}
+.mySlides{display:none;}
+
+
+.mySlides2{display:none;
+height: 500px;
+}
+
 
 .imgsize{
     width:100% ;
@@ -12108,7 +12114,7 @@ opacity: 0.5;
 
 .flex-bg-left{
   flex:40%;
-  height: 495px;
+ 
  
  
 
@@ -12431,4 +12437,17 @@ input[type='checkbox5'] { display: none; } .wrap-collabsible5 { margin: 0 0; } .
 
 
 
+.containerslider {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}

@@ -422,107 +422,30 @@
             
         <section>
 
+            <div class="intro-about-info-bottom imgsize" >
 
-
-            <div id="slider">
-                <ul id="slideWrap"> 
-                  <li><img src= "assets/slider/shan-teas-how-we-serve-you-1.jpg" alt=""></li>
-                   <li><img src="assets/slider/shan-teas-how-we-serve-you-2.jpg" alt=""></li>
-                  <li><img src= "assets/slider/shan-teas-how-we-serve-you-3.jpg" alt=""></li>
-                 
-                 
-              
-                </ul>
-                <a id="prev" ></a>
-                <a id="next" ></a>
-                <a id="text">
-
-
-                    <div class="flex-container-bg">
+                <div class="containerslider">
+                <span class="w3-content w3-section">
+                    <img class="mySlides2" src="assets/slider/shan-teas-how-we-serve-you-1.jpg">
+                    <img class="mySlides2" src="assets/slider/shan-teas-how-we-serve-you-2.jpg" >
+                    <img class="mySlides2" src="assets/slider/shan-teas-how-we-serve-you-3.jpg" >
+                    <div class="top-left"> <div class="flex-container-bg">
                       
-                        <div class="flex-bg-left" style="margin-top: 165px;margin-bottom: 66px;">
-                            <h2 style="padding-left: 10px;padding-top: 10px;"> How We Serve You</h2>
+                        <div class="flex-bg-left" >
+                            <h2 style="padding-left: 10px;padding-top: 10px;text-align: left;"> How We Serve You</h2>
          
-                            <p style="text-align: left;width: 500px;padding-left: 10px;padding-right:10px;font-size: 20px;padding-top: 10px;">Through our uncompromising commitment to quality and our state-of-the-art facilities, we provide highly personalized, bespoke solutions that bear our imprimatur of quality. From hand-picked fresh tea leaves sourced from misty, green plantations, through production and packaging processes perfected across decades, to the moment our tea arrives at your doorstep, we deliver the finest Ceylon teas. Our expert tea tasters and master blenders will deliver the perfect cup of tea to satisfy even the most discerning of connoisseurs. Shan Teas will take you on an extraordinary journey into the realm of tea.</p>
+                            <p style="text-align: left;width: 500px;padding-left: 10px;padding-right:10px;font-size: 20px;padding-top: 10px;height: 420px;">Through our uncompromising commitment to quality and our state-of-the-art facilities, we provide highly personalized, bespoke solutions that bear our imprimatur of quality. From hand-picked fresh tea leaves sourced from misty, green plantations, through production and packaging processes perfected across decades, to the moment our tea arrives at your doorstep, we deliver the finest Ceylon teas. Our expert tea tasters and master blenders will deliver the perfect cup of tea to satisfy even the most discerning of connoisseurs. Shan Teas will take you on an extraordinary journey into the realm of tea.</p>
 
 
                         </div>
   <div class="flex-bg-right"></div>
 
 
-                    </div>
-
-
-
-
-                </a>
+                    </div></div>
+           </div>     </span>
+             
             
-              
-              </div>
-            
-            
-              <script>
-                var responsiveSlider = function() {
-            
-            var slider = document.getElementById("slider");
-            var sliderWidth = slider.offsetWidth;
-            var slideList = document.getElementById("slideWrap");
-            var count = 1;
-            var items = slideList.querySelectorAll("li").length;
-            var prev = document.getElementById("prev");
-            var next = document.getElementById("next");
-            
-            window.addEventListener('resize', function() {
-              sliderWidth = slider.offsetWidth;
-            });
-            
-            var prevSlide = function() {
-              if(count > 1) {
-                count = count - 2;
-                slideList.style.left = "-" + count * sliderWidth + "px";
-                count++;
-              }
-              else if(count = 1) {
-                count = items - 1;
-                slideList.style.left = "-" + count * sliderWidth + "px";
-                count++;
-              }
-            };
-            
-            var nextSlide = function() {
-              if(count < items) {
-                slideList.style.left = "-" + count * sliderWidth + "px";
-                count++;
-              }
-              else if(count = items) {
-                slideList.style.left = "0px";
-                count = 1;
-              }
-            };
-            
-            next.addEventListener("click", function() {
-              nextSlide();
-            });
-            
-            prev.addEventListener("click", function() {
-              prevSlide();
-            });
-            
-            setInterval(function() {
-              nextSlide()
-            }, 5000);
-            
-            };
-            
-            window.onload = function() {
-            responsiveSlider();  
-            }
-            
-            
-              </script>
-
-
-
+            </div>
 
  </section>
 
