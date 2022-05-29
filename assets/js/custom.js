@@ -116,6 +116,7 @@
 
     }
 
+    
     function accordion($off) {
         let acc = $(".accordion__question");
         if (!acc.length) {
@@ -929,6 +930,7 @@
                 });
 
             },
+            
 
         };
     }
@@ -937,7 +939,7 @@
         let headerSmall = $(".site-header");
         headerSmall.removeClass("header-stickytop");
         let bodyScroll = 0;
-        var $ofContent = $(navfixed).offset();
+        var $ofContent = $("navnot").offset();
         var header = $(".header-single-post .containers").offset();
 
         var post_full_content = $(".post-full-content").offset();
@@ -2485,6 +2487,7 @@ function initMap() {
                             },
                         ],
                     },
+                    
                     {
                         "elementType": "labels.text.stroke",
                         "stylers": [
