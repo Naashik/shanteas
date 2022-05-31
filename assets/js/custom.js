@@ -84,16 +84,16 @@
 
     var myIndex = 0;
     carousel();
-    
+
     function carousel() {
       var i;
       var x = document.getElementsByClassName("mySlides2");
       for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+        x[i].style.display = "none";
       }
       myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
       setTimeout(carousel, 5000); // Change image every 2 seconds
     }
 
@@ -146,7 +146,7 @@
 
     }
 
-    
+
     function accordion($off) {
         let acc = $(".accordion__question");
         if (!acc.length) {
@@ -359,6 +359,22 @@
                 this.bySlick("[data-dsn-col=\"1\"] .slick-slider", {
                     infinite: true,
                     slidesToShow: 1,
+                    autoplay: true,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                dots: false,
+                            },
+                        },
+                        {
+                            breakpoint: 500,
+                            settings: {
+                                dots: false,
+                            },
+                        },
+                    ],
                 });
                 this.bySlick("[data-dsn-col=\"2\"] .slick-slider", {
                     infinite: true,
@@ -960,7 +976,7 @@
                 });
 
             },
-            
+
 
         };
     }
@@ -969,7 +985,7 @@
         let headerSmall = $(".site-header");
         headerSmall.removeClass("header-stickytop");
         let bodyScroll = 0;
-        var $ofContent = $("navnot").offset();
+        var $ofContent = $(".wrapper").offset();
         var header = $(".header-single-post .containers").offset();
 
         var post_full_content = $(".post-full-content").offset();
@@ -1042,7 +1058,7 @@
 
             $this.justifiedGallery({
                 rowHeight: 300,
-            
+
 
             });
 
@@ -1407,7 +1423,7 @@
                     scroll = null;
                 }
             },
-            
+
             getScrollbar: function ($id) {
                 if ($id === undefined) {
                     return Scrollbar.get(myScrollbar);
@@ -2517,7 +2533,7 @@ function initMap() {
                             },
                         ],
                     },
-                    
+
                     {
                         "elementType": "labels.text.stroke",
                         "stylers": [
@@ -2546,7 +2562,7 @@ function initMap() {
                             },
                         ],
                     },
-                    
+
                     {
                         "elementType": "labels.icon",
                         "stylers": [
@@ -2710,6 +2726,3 @@ function contactValidator() {
         }
     });
 }
-
-
-
